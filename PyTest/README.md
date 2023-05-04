@@ -3,9 +3,11 @@
 To run this code, follow the steps below:
 
 1. Install pytest module
+
 <t>pip install pytest
 
 2. Run pytest from the root directory i.e, PyTest in this case
+
 <t>Pytest will find the tests and run them
 
 <t>python -m pytest
