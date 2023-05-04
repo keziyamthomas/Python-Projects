@@ -48,4 +48,11 @@ def test_square_types(sq_instance,num,expected):
 
 
 # TEST 10
+# Test for exceptions
+
+def test_square_typerror(sq_instance):
+    with pytest.raises(TypeError) as e:
+        sq_instance.square("string")
+    # assert str(e.value)
+    print(str(e.value))  # use -s flag while running pytest to see what this statement prints
 
