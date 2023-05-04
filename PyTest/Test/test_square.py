@@ -1,6 +1,7 @@
 
 from Code.Square import Square
 import pytest
+import sys
 
 # TEST 1
 # testing square function
@@ -56,3 +57,23 @@ def test_square_typerror(sq_instance):
     # assert str(e.value)
     print(str(e.value))  # use -s flag while running pytest to see what this statement prints
 
+
+# TEST 11
+# Testing if skipping a test works
+
+@pytest.mark.skip(reason="Missing functionality")
+def test_skip():
+    print("Skipped test case")
+
+# TEST 12
+# Testing if 'skip if' works
+
+@pytest.mark.skipif(sys.platform!=("darwin"), reason="Perform test only on Mac OS X systems")
+def test_platform():
+    print(sys.platform)
+    print("You should see this only if you are running on a MAC OS X platform")
+
+# TEST 13
+@pytest.mark.skipif(sys.platform==("darwin"), reason="Perform test only if it is not a MAC OS X system")
+def test_not_platform():
+    print("You should see this only if you are running on a non MAC OS X platform")
