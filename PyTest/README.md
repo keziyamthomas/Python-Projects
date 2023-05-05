@@ -35,4 +35,6 @@ When fixture function is attached to a test function, it will return the data to
 
 <li><b>pytest.mark.skipif<b> - skips the test case based on the value of the condition provided
 
+<li><b>Mocking/Monkeypatching<b> - allows you to set or delete attribute values, dictionary items or environment variables from within the test cases only for the purpose of testing
+
 </ul>
