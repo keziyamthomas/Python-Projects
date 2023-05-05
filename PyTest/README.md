@@ -31,10 +31,10 @@ When fixture function is attached to a test function, it will return the data to
 
 <li><b>pytest.raises</b> - checks if the correct Exception is raised when an incorrect/incompatible input is provided in the test
 
-<li><b>pytest.mark.skip<b> - skips the test case 
+<li><b>pytest.mark.skip</b> - skips the test case 
 
-<li><b>pytest.mark.skipif<b> - skips the test case based on the value of the condition provided
+<li><b>pytest.mark.skipif</b> - skips the test case based on the value of the condition provided
 
-<li><b>Mocking/Monkeypatching<b> - allows you to set or delete attribute values, dictionary items or environment variables from within the test cases only for the purpose of testing
+<li><b>Mocking/Monkeypatching</b> - allows you to set or delete attribute values, dictionary items or environment variables from within the test cases only for the purpose of testing
 
 </ul>
